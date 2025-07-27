@@ -1,0 +1,128 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "name": "Name",
+                    "host": "Host",
+                    "port": "Port",
+                    "ssl": "Enable SSL",
+                    "verify_ssl": "Verify SSL",
+                    "username": "Username",
+                    "password": "Password",
+                    "scan_interval": "Scan Interval(Seconds)",
+                    "sensors": "Sensors"
+                },
+                "title": "Traccar"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "name": "Name",
+                    "host": "Host",
+                    "port": "Port",
+                    "ssl": "Enable SSL",
+                    "verify_ssl": "Verify SSL",
+                    "username": "Username",
+                    "password": "Password",
+                    "scan_interval": "Scan Interval(Seconds)",
+                    "sensors": "Sensors"
+                },
+                "title": "Traccar"
+            }
+        }
+    },
+	"entity": {
+		"device_tracker": {
+			"traccar_device_tracker": {
+				"state_attributes": {
+					"speed": {
+						"name": "speed"
+					},
+					"course": {
+						"name": "course"
+					},
+					"device_status": {
+						"name": "evice_status"
+					},
+					"last_update": {
+						"name": "last_update"
+					},
+					"battery_level": {
+						"name": "Battery level"
+					},
+					"battery": {
+						"name": "battery"
+					},
+					"gps_accuracy": {
+						"name": "GPS accuracy"
+					},
+					"latitude": {
+						"name": "latitude"
+					},
+					"longitude": {
+						"name": "longitude"
+					},
+					"motion": {
+						"name": "motion"
+					},
+					"armed": {
+						"name": "armed"
+					},
+					"charge": {
+						"name": "charge"
+					},
+					"ignition": {
+						"name": "ignition"
+					},
+					"status": {
+						"name": "status"
+					},
+					"distance": {
+						"name": "distance"
+					},
+					"totalDistance": {
+						"name": "Total Distance"
+					},
+					"hours": {
+						"name": "hours"
+					},
+					"address": {
+						"name": "address"
+					},
+					"source_type": {
+						"name": "source_type",
+						"state": {
+							"bluetooth_le": "bluetooth_le",
+							"bluetooth": "bluetooth",
+							"gps": "GPS",
+							"router": "router"
+						}
+					}
+			    }
+			}
+		},
+		"sensor": {
+			"wgs84_location": {
+				"name": "WGS84 Location",
+				"state_attributes": {
+					"wgs84_latitude": {
+						"name": "WGS84 Latitude"
+					},
+					"wgs84_longitude": {
+						"name": "WGS84 Longitude"
+					},
+					"gcj02_latitude": {
+						"name": "GCJ02 Latitude"
+					},
+					"gcj02_longitude": {
+						"name": "GCJ02 Longitude"
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Traccar 服务器",
+  "domains": ["ha_traccar"],
+  "render_readme": true,
+  "homeassistant": "2023.0.0",
+  "country": ["CN"]
+}

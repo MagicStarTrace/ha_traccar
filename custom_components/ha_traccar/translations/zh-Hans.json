@@ -1,0 +1,128 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "name": "名称",
+                    "host": "主机",
+                    "port": "端口",
+                    "ssl": "启用SSL(https)",
+                    "verify_ssl": "校验SSL证书",
+                    "username": "用户名",
+                    "password": "密码",
+                    "scan_interval": "扫描间隔(秒)",
+                    "sensors": "传感器"
+                },
+                "title": "Traccar"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "name": "名称",
+                    "host": "主机",
+                    "port": "端口",
+                    "ssl": "启用SSL(https)",
+                    "verify_ssl": "校验SSL证书",
+                    "username": "用户名",
+                    "password": "密码",
+                    "scan_interval": "扫描间隔(秒)",
+                    "sensors": "传感器"
+                },
+                "title": "Traccar"
+            }
+        }
+    },
+	"entity": {
+		"device_tracker": {
+			"traccar_device_tracker": {
+				"state_attributes": {
+					"speed": {
+						"name": "速度"
+					},
+					"course": {
+						"name": "行驶方向"
+					},
+					"device_status": {
+						"name": "设备状态"
+					},
+					"last_update": {
+						"name": "更新时间"
+					},
+					"battery_level": {
+						"name": "电池电量"
+					},
+					"battery": {
+						"name": "电池"
+					},
+					"gps_accuracy": {
+						"name": "GPS精度"
+					},
+					"latitude": {
+						"name": "纬度"
+					},
+					"longitude": {
+						"name": "经度"
+					},
+					"motion": {
+						"name": "移动"
+					},
+					"armed": {
+						"name": "警告"
+					},
+					"charge": {
+						"name": "充电"
+					},
+					"ignition": {
+						"name": "点火"
+					},
+					"status": {
+						"name": "状态"
+					},
+					"distance": {
+						"name": "里程"
+					},
+					"totalDistance": {
+						"name": "总里程"
+					},
+					"hours": {
+						"name": "小时"
+					},
+					"address": {
+						"name": "地址"
+					},
+					"source_type": {
+						"name": "数据源",
+						"state": {
+							"bluetooth_le": "低功耗蓝牙",
+							"bluetooth": "蓝牙",
+							"gps": "GPS定位",
+							"router": "路由器"
+						}
+					}
+			    }
+			}
+		},
+		"sensor": {
+			"wgs84_location": {
+				"name": "WGS84坐标",
+				"state_attributes": {
+					"wgs84_latitude": {
+						"name": "WGS84纬度"
+					},
+					"wgs84_longitude": {
+						"name": "WGS84经度"
+					},
+					"gcj02_latitude": {
+						"name": "GCJ02纬度"
+					},
+					"gcj02_longitude": {
+						"name": "GCJ02经度"
+					}
+				}
+			}
+		}
+	}
+}

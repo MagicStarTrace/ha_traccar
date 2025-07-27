@@ -1,0 +1,51 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Traccar 服务器",
+        "data": {
+          "host": "[%key:common::config_flow::data::host%]",
+          "password": "[%key:common::config_flow::data::password%]",
+          "port": "[%key:common::config_flow::data::port%]",
+          "ssl": "[%key:common::config_flow::data::ssl%]",
+          "username": "[%key:common::config_flow::data::username%]",
+          "verify_ssl": "[%key:common::config_flow::data::verify_ssl%]"
+        },
+        "data_description": {
+          "host": "Traccar 服务器的主机名或 IP 地址",
+          "port": "8082",
+          "username": "用于登录 Traccar 服务器的用户名（电子邮件）",
+          "password": "密码",
+          "ssl": "使用 SSL 证书",
+          "verify_ssl": "验证 SSL 证书"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
+      "unknown": "[%key:common::config_flow::error::unknown%]"
+    },
+    "abort": {
+      "already_configured": "[%key:common::config_flow::abort::already_configured_device%]"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Traccar 服务器选项",
+        "data": {
+          "max_accuracy": "最大精度",
+          "skip_accuracy_filter_for": "属性的位置跳过过滤器",
+          "custom_attributes": "自定义属性",
+          "events": "事件"
+        },
+        "data_description": {
+          "max_accuracy": "任何精度高于此值的位置报告都将被忽略",
+          "skip_accuracy_filter_for": "如果此处定义的属性在更新中存在，则它们将忽略精度过滤器",
+          "custom_attributes": "在此处添加任何自定义或计算的属性。这些属性将被添加到设备属性中",
+          "events": "选定的事件将在 Home Assistant 中触发"
+        }
+      }
+    }
+  }
+}
